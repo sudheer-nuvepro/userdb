@@ -14,7 +14,7 @@ RUN mvn clean package
  
 # Step 2: Prepare the runtime environment
 # Use a slim OpenJDK image to run the application
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-alpine
  
 # Set the working directory for the runtime container
 WORKDIR /app
